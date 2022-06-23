@@ -1,0 +1,20 @@
+<div class="conteiner-fluid">
+    <div class="col-lg-6 col-md-8">
+        <form>
+            <div class="form-group">
+                <label>Nombre</label>
+                <input class="form-control" type="text" id="nombreTxt" name="nombreTxt" [(ngModel)]="persona.nombre">
+            </div>
+            <div class="form-group">
+                <label>Apellido</label>
+                <input class="form-control" type="text" id="apellidoTxt" name="apellidoTxt" [(ngModel)]="persona.apellido">
+            </div>
+            <div class="form-group">
+                <label>DNI</label>
+                <input class="form-control" type="text" id="dniTxt" name="dniTxt" [(ngModel)]="persona.dni">
+            </div>
+            <br/>
+            <button class="btn btn-warning" (click)="updatePersona()">Guardar</button>
+        </form>
+    </div>
+</div>
